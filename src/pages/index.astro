@@ -1,0 +1,45 @@
+---
+import LandingHeader from "../components/LandingHeader.astro";
+import Layout from "../layouts/Layout.astro";
+import HeroSection from "../components/HeroSection.astro"
+import ChargeSection from "../components/ChargeSection.astro";
+import ExploreSection from "../components/ExploreSection.astro";
+import ProductsSection from "../components/ProductsSection.astro";
+import ThingsSection from "../components/ThingsSection.astro";
+import ImagesSection from "../components/ImagesSection.astro";
+import DataSection from "../components/DataSection.astro";
+import FooterSection from "../components/FooterSection.astro";
+import "../styles/style.css"
+
+---
+
+<Layout title = "Doble Bit">
+		<LandingHeader/>
+
+	<main class="snap-y snap-proximity relative w-full h-screen overflow-x-hidden"> 
+		<div class="snap-center">
+			<HeroSection/>
+		</div>
+		<div class="snap-center">
+			<ChargeSection/>
+		</div>
+		<div class="snap-center">
+			<ExploreSection/>
+		</div>
+		<div class="snap-center">
+			<ProductsSection/>
+		</div>
+		<div class="snap-center">
+			<ThingsSection/>
+		</div>
+		<div class="snap-center">
+			<ImagesSection/>
+		</div>
+		<div class="snap-center">
+			<DataSection/>
+		</div>
+		<div class="snap-center">
+			<FooterSection/>
+		</div>
+	</main>
+</Layout>
