@@ -8,7 +8,10 @@ module.exports = {
 			'FjallaOne': ['FjallaOne','sans-serif'],
 			'Poppins': ['Poppins','sans-serif'],
 			'Raleway': ['Raleway', 'sans-serif'],
-			'MontserratE': ['MontserratE', 'sans-serif']
+			'MontserratE': ['MontserratE', 'sans-serif'],
+			'PoppinsE': ['Poppins','sans-serif'],
+			'PoppinsM': ['Poppins','sans-serif'],
+			'PoppinsB': ['Poppins','sans-serif']
 		},
 		colors: {
 				'green': '#18DB59',
