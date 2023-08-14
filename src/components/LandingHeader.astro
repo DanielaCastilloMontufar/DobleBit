@@ -1,40 +1,42 @@
 ---
 import Logo from "./Logo.astro";
+import ContactButton from "./comuns/ContactButton.astro"
+---
+<section id="landing-header"
+class="z-50 sticky">
+
+<body>
+  <header>
+    <a class="logo"><Logo/></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portafolio</a>
+      <a1 href="#"><ContactButton/></a1>
+      <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+  </header>
+</body>
+</section>
+
+<!-- ---
+import Logo from "./Logo.astro";
+import Header from "./comuns/Header.astro";
+import ContactButton from "./comuns/ContactButton.astro";
 ---
 
-<header 
-		id="landing-header" 
-		class="py-3 flex items-center fixed w-screen justify-between text-white bg-bluek z-50">
-			<div class="flex flex-grow basis-0 ml-10">
-				<Logo/>
-			</div>
+<header
+  id="landing-header"
+  class="py-3 flex items-center fixed w-screen justify-between text-white bg-bluek z-50"
+>
+  <div class="flex flex-grow basis-0 ml-10">
+    <Logo />
+  </div>
 
-		<div>
-			</div>	
+  <Header/>
+  <ContactButton/>  
 
-			<nav>
-				<ul class="flex text-sm ml-60">
-
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block">Inicio</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block ">Nosotros</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors delay:40 text-white font-medium font-Montserrat inline-block">Servicios</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block">Portafolio</a></li>
-				</ul>
-
-			</nav>
-		
-
-			<nav class="flex flex-grow ml-60 basis-0">
-				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:font-Montserrat [&>li>a]:inline-block [&>li>a]:px-10 [&>li>a]:py-2">
-					<li><a class="rounded-lg border-2 border-green-100 text-sm rounded text-white hover:bg-green hover:text-black transitions-colors border-collapse" href="#">Contáctenos</a></li>
-				</ul>
-			</nav>
-
-			<style>
-				body {
-					background: #ffff;
-					z-index: 0;
-				}
-				</style>
-
-		</header>
+</header> -->

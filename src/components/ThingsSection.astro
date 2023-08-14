@@ -2,27 +2,47 @@
 import Box from "./comuns/Box.astro";
 ---
 
-<section class="h-screen w-screen flex flex-col items-center gap-10 justify-center">
-  <header class="text-center w-full">
-    <h2 class="text-white text-[60px] font-regular font-FjallaOne">
-      PRODUCTOS WEB DIGITALES PARA CLIENTES INCREÍBLES
-    </h2>
-  </header>
-
-  <style>
-    * {
-      background: #17171f;
-    }
-  </style>
-
-  <div class="container mx-auto gap-10 grid grid-cols-3">
-    <Box  imagen="/public/fonts/icon01.png" title="PRODUCTOS DIGITALES" items={["Marca digital", "Sitios web y móviles", "Interfaz de usuario", "Diseño responsive"]}/>
-
-    <Box imagen="/public/fonts/icon02.png" title="DISEÑO UI-UX" items={["Estrategia Digital", "Experiencia de Usuario", "Maquetación Web", "Sitios móviles"]}/>
-  
-    <Box imagen="/public/fonts/icon03.png" title="DESARROLLO WEB" items={["Plataforma Personalizada", "Ejecuciones de Back-end", "Aplicaciones de Interfaz", "Sistemas Web"]}/>
-
+<section id="slide5">
+  <div>
+    <h2>LAS COSAS QUE SOMOS CAPACES DE HACER</h2>
   </div>
 
-</section> 
+  <nav>
+    <Box
+      imagen="/public/fonts/icon01.png"
+      title="PRODUCTOS DIGITALES"
+      items={[
+        "Marca digital",
+        "Sitios web y móviles",
+        "Interfaz de usuario",
+        "Diseño responsive",
+      ]}
+    />
+  </nav>
 
+  <nav>
+    <Box
+      imagen="/public/fonts/icon02.png"
+      title="DISEÑO UI-UX"
+      items={[
+        "Estrategia Digital",
+        "Experiencia de Usuario",
+        "Maquetación Web",
+        "Sitios móviles",
+      ]}
+    />
+  </nav>
+
+  <nav>
+    <Box
+      imagen="/public/fonts/icon03.png"
+      title="DESARROLLO WEB"
+      items={[
+        "Plataforma Personalizada",
+        "Ejecuciones de Back-end",
+        "Aplicaciones de Interfaz",
+        "Sistemas Web",
+      ]}
+    />
+  </nav>
+</section>

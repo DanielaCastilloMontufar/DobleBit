@@ -1,95 +1,44 @@
-<section class="h-screen w-screen relative bg-white grid grid-cols-3 ">
-    <div class="container-lg mt-20">
-            <h1 class="tracking-widest pb-10 pl-20 text-black font-regular font-FjallaOne text-[40px]">
-                DI HOLA PARA LLEGAR A NOSOTROS</h1>
-            <iframe class="pl-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5119992574414!2d-71.539485888208!3d-16.39880323806496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a59ffae2999%3A0xc419f49d1f9cd270!2sPlaza%20de%20Armas%20de%20Arequipa!5e0!3m2!1ses-419!2spe!4v1690921326606!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-    </div>
+---
+import "./comuns/Maps.astro";
+import Maps from "./comuns/Maps.astro";
+import Input from "./comuns/Input.astro";
+import InputMessage from "./comuns/InputMessage.astro";
+import SendButton from "./comuns/SendButton.astro";
+---
 
-        <div class="pl-10 grow-60 w-100 pt-5">
-                <div class="pt-20 pl-20 text-black font-semibold font-Poppins text-[15px]">
-                    OFICINA PRINCIPAL
-                </div>
-                <div class="pt-1 pl-20 text-black font-regular font-Poppins text-[12px]">
-                    Boryssa Himry 124 B Block Pozniaky
-                </div>
-                <div class="pt-1 pl-20 text-black font-regular font-Poppins text-[12px]">
-                    Kiev - UKRAINE
-                </div>
+<section id="slide7">
+  <div>
+    <h1>DI HOLA PARA</h1>
+    <h1>LLEGAR A NOSOTROS</h1>
+    <!-- <Maps /> -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5119992574414!2d-71.539485888208!3d-16.39880323806496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a59ffae2999%3A0xc419f49d1f9cd270!2sPlaza%20de%20Armas%20de%20Arequipa!5e0!3m2!1ses-419!2spe!4v1690921326606!5m2!1ses-419!2spe"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
 
-                <div class="pt-10 pl-20 mt-5 flex">
-                    <label class="flex">
-                        <input type = "text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex">
-                        <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex">Your name</span></label>
-                    </label>
+  <div>
+    <h2>OFICINA PRINCIPAL</h2>
+    <h3>Boryssa Himry 124 B Block Pozniaky</h3>
+    <a>Kiev - UKRAINE</a>
 
-                    <style is:global>
-                        input[type="text"]:focus ~ .input-text{
-                            @apply text-black bg-white transform -translate-y-9 -translate-x-4 scale-75 font-bold text-[18px] font-Poppins;
+    <Input title="Your name" />
 
-                        }
-                    </style>    
-                </div>
+      <Input title="Your e-mail" />
 
-                <div class="pt-10 pl-20 flex">
-                    <label class="flex">
-                        <input type = "text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex">
-                        <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex">Your e-mail</span></label>
-                    </label>   
-                </div>
+      <Input title="Subject" />
 
-                <div class="pt-10 pl-20 flex">
-                    <label class="flex">
-                        <input type = "text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex">
-                        <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex">Subject</span></label>
-                    </label>   
-                </div>
+      <InputMessage title="Your Message" />
 
-                <div class="pt-10 pl-20 flex">
-                    <label class="flex">
-                        <input type = "text" class="pl-4 grow h-20 w-[25rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex">
-                        <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex">Your message</span></label>
-                    </label>   
-                </div>
+      <SendButton title="Enviar"/>
 
-                <div class="pt-10 pl-20 ">
-                    <a class=" border-2 border-black text-[12px] font-Poppins font-black px-8 py-3 inline-block hover:bg-black hover:text-white hover:font-black transitions-colors border-collapse " href="#"> Enviar</a>
-                </div>
+    <!-- <SendButton title="Enviar" /> -->
+  </div>
 
-                
-
-        </div>
-
-        <div class=" pt-5">
-            <a class="w-100 container">
-                <div class="pt-20 pl-20 text-black font-semibold font-Poppins text-[15px]">
-                    CONTÁCTANOS
-                </div>
-                <div class="pt-1 pl-20 text-black font-regular font-Poppins text-[12px]">
-                    +51 943 273 237
-                </div>
-                <div class="underline">
-                    <ul class="relative leading-[1rem] pt-1 pl-20">
-                        <a class="text-black text-[12px] font-regular font-Poppins "> hola@doble-bit.com </a>
-                    </ul>
-                    </div> 
-            </a>
-
-            <style is:global>
-                .underline {
-                    text-decoration-line: underline;
-                    color: black;
-                    text-decoration-thickness: 1px;
-                    text-underline-offset: 1px;
-                }
-            </style>
-
-        </div>
-
-
-    <!-----
-    
-    --- -->
-    
+  <div>
+    <h4>CONTÁCTANOS</h4>
+    <h5>+51 943 273 237</h5>
+    <ul>hola@doble-bit.com</ul>
+  </div>
 </section>
-
