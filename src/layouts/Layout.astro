@@ -55,30 +55,22 @@ const { title } = Astro.props
   src: url('/public/fonts/Montserrat-ExtraBold.ttf');
 }
 
-  .box {
-    position:static;
-    border: 2px solid #ffff;
-    background-color: transparent;
-    z-index: 0;
-    border-radius: 50%;
-    width: 500px;
-    height: 470px;
-    text-align: center;
-    top: 100px;
-    left: 450px;
-    flex: none;
-    filter: blur(4px);
-    animation: ping 5s cubic-bezier(0, 0, 0.2, 1) infinite;
+@font-face {
+    font-family: 'PoppinsE';
+    src: url('/public/fonts/Poppins-Black.ttf');
   }
 
-@keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
+  @font-face {
+    font-family: 'PoppinsM';
+    src: url('/public/fonts/Poppins-Medium.ttf');
+  }
+
+  @font-face {
+    font-family: 'PoppinsB';
+    src: url('/public/fonts/Poppins-Bold.ttf');
   }
 
   
-}
 
 
 
