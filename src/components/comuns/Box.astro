@@ -1,36 +1,31 @@
 ---
 interface Props {
-  imagen:string, title: string, items:Array<string>;
+  imagen: string;
+  title: string;
+  items: Array<string>;
 }
 
-const {imagen,title,items} = Astro.props
+const { imagen, title, items } = Astro.props;
 ---
 
-
-<div class="relative p-5 text-center bg-black delay:40 transitions-colors mt-2 font-Poppins text-[12px] font-regular max-w-[70%] contain-general ">
-  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-23px] right-[-23px] contain-puntos"></div>
-
+<div class="relative mx-auto contain-general">
+  
   <div
-    class="w-full"
+    class="relative text-center p-8 z-20 hover:bg-black delay:40 transitions-colors duration-300"
   >
-    <img
-      src={`${imagen}`}
-      class="w-20 h-20 mx-auto"
-    />
+    <div class="w-full">
+      <img src={`${imagen}`} class="w-20 h-20 mx-auto" />
+    </div>
+    <h4 class="my-3 font-black inline-block text-white">
+      {title}
+    </h4>
+    <ul class="flex flex-col gap-2 text-white/70">
+      {items.map((item) => <li>{item}</li>)}
+    </ul>
   </div>
-  <h4
-    class="my-2 font-black inline-block text-white"
+  <div
+    style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px"
+    class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10"
   >
-    {title}
-  </h4>
-  <ul class="flex flex-col gap-2 text-white/70">
-    {
-        items.map(item => (
-            <li>
-                {item}     
-            </li>
-        ))
-    }
-    
-  </ul>
+  </div>
 </div>

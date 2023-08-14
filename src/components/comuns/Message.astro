@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<nav id="footer" class="flex justify-around">
+    <a href="#">
+        <ul class="rounded-lg border-2 pt-[9px] pb-[9px] border-green-100  text-white hover:bg-green text-center w-[250px] hover:text-black transitions-colors border-collapse">{title}</ul>
+    </a>
+    
+  </nav>

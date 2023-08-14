@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<div class="underline">
+    <ul class="text-white text-[15px] font-regular font-Poppins">
+        {title}
+    </ul>
+  </div>
+
+<style is:global>
+  .underline {
+    text-decoration-line: underline;
+    color: green;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 8px;
+  }
+</style>

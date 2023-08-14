@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  subtitle: Array<string>;
+}
+
+const {title,subtitle} = Astro.props;
+---
+
+      <div class="w-full">
+      <h4 class="font-black inline-block text-white">
+        {title}
+      </h4>
+      <ul>
+        {subtitle.map((subtitle) => <li>{subtitle}</li>)}
+      </ul>
+    </div>
+  

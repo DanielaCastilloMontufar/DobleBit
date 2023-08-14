@@ -1,0 +1,15 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  subtitle: string;
+}
+
+const { number, title, subtitle } = Astro.props;
+---
+
+<ul class="text-hello font-MontserratE font-bold text-[50px]">{number}
+  <ul class="font-FjallaOne text-black font-regular text-[20px]">{title}
+    <div class="font-Poppins text-[15px] leading-6 text-justify">{subtitle}</div>
+</ul>
+</ul>

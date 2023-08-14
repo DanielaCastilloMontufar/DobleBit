@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+}
+
+const {title} = Astro.props;
+---
+
+    <li class="flex pt-10 pl-8">
+        <label class="flex">
+            <input type = "text" class="pl-4 h-14 w-[20rem] text-1xl bg-white border-[1px] font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex">
+            <span class="text-1xl text-black text-opacity-80 font-Poppins absolute pt-4 pl-4 transition duration-200 input-text flex">{title}</span>
+        </label>   
+      </li>
+
+<style>
+    input[type="text"]:focus ~ .input-text{
+        @apply text-black bg-white transform -translate-y-10 -translate-x-4 scale-75 font-bold text-[18px] font-Poppins;
+
+    }
+</style>   
