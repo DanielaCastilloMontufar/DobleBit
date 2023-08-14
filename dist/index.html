@@ -6,323 +6,594 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <meta name="generator" content="Astro v2.8.0">
     <title>Doble Bit</title>   
-  <link rel="stylesheet" href="/_astro/index.8dc2a978.css" /></head>
+  <link rel="stylesheet" href="/_astro/index.8944b934.css" /></head>
   <body>
     
-	<header id="landing-header" class="fixed py-3 px-5 flex items-center w-full justify-between z-50 text-white overflow-wrap">
-			<div class="flex flex-grow basis-0">
-				<img src="/DobleBit_b.png" class="tds-site-logo-icon w-30 h-10">
-			</div>
+		<section id="landing-header" class="z-50">
 
-			<nav>
-				<ul class="flex text-sm ">
 
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block px-2 py-1">Inicio</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block px-2 py-1">Nosotros</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green hover:text-black transitions-colors delay:40 text-white font-medium font-Montserrat inline-block px-2 py-1">Servicios</a></li>
-					<li><a href="#" class="rounded-lg px-3 py-2 text-slate-700 hover:bg-green delay:40 hover:text-black transitions-colors text-white font-medium font-Montserrat inline-block px-2 py-1">Portafolio</a></li>
-				</ul>
+  <header>
+    <a class="logo"><img src="/DobleBit_b.png" class="tds-site-logo-icon"></a>
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">&#8801</label>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portafolio</a>
+      <ul><a class="flex px-10 py-2 rounded-lg border-2 text-sm rounded text-white" href="#">Contáctenos</a></ul>
+      <label for="check" class="esconder-menu">&#215</label>
+    </nav>
+  </header>
+</section>
 
-			</nav>
-		
+<!-- ---
+import Logo from "./Logo.astro";
+import Header from "./comuns/Header.astro";
+import ContactButton from "./comuns/ContactButton.astro";
+---
 
-			<nav class="flex flex-grow justify-end basis-0">
-				<ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:font-Montserrat [&>li>a]:inline-block [&>li>a]:px-10 [&>li>a]:py-2">
-					<li><a class="rounded-lg border-2 border-green-100 text-sm rounded text-white hover:bg-green hover:text-black transitions-colors border-collapse" href="#">Contáctenos</a></li>
-				</ul>
-			</nav>
+<header
+  id="landing-header"
+  class="py-3 flex items-center fixed w-screen justify-between text-white bg-bluek z-50"
+>
+  <div class="flex flex-grow basis-0 ml-10">
+    <Logo />
+  </div>
 
-		</header>
+  <Header/>
+  <ContactButton/>  
 
-	<main class="scroll-snap-none snap-mandatory snap-y relative w-full h-screen overflow-wrap"> 
+</header> -->
+
+	<main class="snap-y snap-proximity relative w-full overflow-x-hidden"> 
 		<div class="snap-center">
-			<section class="h-screen w-screen text-center overflow-wrap relative fixed">
+			<section class="lg:h-screen py-0 lg:py-0 w-screen flex flex-col items-center gap-0 justify-center astro-NLOW4R3U">
 
-		<div class="z-30 relative h-full flex flex-col">
-
-			<header>
-
-
-				<h2 class="text-white pt-40 text-[50px] font-bold font-Montserrat"> Potencia tu presencia en línea </h2>
-				
-				<h2 class="text-white pt-1 tracking-[.0em] leading-[2rem] text-[50px] font-bold font-Montserrat"> y conquista a tu audiencia </h2>
-				<h1 class="text-[15px] leading-[4rem] ">    .   </h1>
-				<h3 class="text-white text-sm pt-10 text-[18px] leading-[0.5rem] font-Comfortaa font-regular">Haz clic ahora para obtener una consulta gratuita y descubre cómo podemos llevar tu negocio al siguiente nivel digital!
-				</h3><h3 class="text-white text-sm pt-5 text-[18px] leading-[0.5rem] font-Comfortaa font-regular">No pierdas esta oportunidad
-				</h3><h3 class="text-white text-sm pt-5 text-[18px] leading-[0.5rem] font-Comfortaa font-regular"> de destacarte en la era digital. </h3>
-
-			</header>	
+	<div class="relative max-w-[70%] mx-auto contain-general text-center">
+  
+    <div class="text-white text-[50px] font-Montserrat relative">
+      <div class="w-full">
+      <h4 class="font-black inline-block text-white">
+        Potencia tu presencia en línea y conquista a tu audiencia
+      </h4>
+      <ul class="mt-20 text-white text-sm text-[18px] leading-[3rem] font-Comfortaa font-regular">
+        <li>Haz clic ahora para obtener una consulta gratuita y descubre cómo podemos llevar tu negocio al siguiente nivel digital!</li><li>No pierdas esta oportunidad de destacarte en la era digital.</li>
+      </ul>
+    </div>
+</div></div>
 			
-			
-			<footer class="flex flex-col flex-grow justify-end pb-40 basis-0 z-30">
-				<div>
-					<a class="rounded-lg border-2 border-green-100 text-sm rounded font-Montserrat font-medium text-white px-14 py-2 inline-block hover:bg-green hover:text-black transitions-colors border-collapse " href="#"> Envíanos un mensaje</a>
-				</div>
-				
-			</footer>
+
+			<footer class="z-30 text-white text-sm font-Montserrat font-medium inline-block mt-20 mb-20 pb-10">
+    <a href="#">
+        <ul class="rounded-lg border-2 pt-[9px] pb-[9px] border-green-100 hover:bg-green px-10 hover:text-black transitions-colors border-collapse pb-40">Envíanos un mensaje</ul>
+    </a>
+    
+</footer>
 
 					
-				
-				<div class="box fixed">
-				</div>
-	</div>
 
 </section>
 		</div>
 		<div class="snap-center">
-			<section class="h-screen w-screen relative flex columns-2 overflow-wrap">
-    <div class="container px-10 pt-20 w-1/2 flex-none">
+			<section id="slide2">
+  <div>
+    <h2>Nuestros Servicios de Desarrollo</h2>
+    <h3>Desarrollador de Software Innovador y Diseño</h3>
+    <h4>Web Profesional</h4>
+    <h5>Nuestro enfoque profesional y orientado al detalle garantiza resultados
+        de alta calidad que destacan tu marca y generan una experiencia
+        excepcional para tus usuarios. Confía en nosotros para potenciar tu
+        presencia en línea y alcanzar nuevos niveles de éxito</h5>
+        <footer class="z-30 text-sm font-MontserratE inline-block mt-20">
+    <a href="#">
+        <ul class="rounded-lg border-2 pt-[9px] pb-[9px] border-green-100 hover:bg-green px-10 hover:text-black transitions-colors border-collapse pb-40">Contáctenos</ul>
+    </a>
+    
+</footer>
+  </div>
+  <div>
+    <div class="container text-black grow items-justify-end  astro-U3CQKXTR">
+  <div class="box-border min-w-min h-fit rounded-lg border border-black astro-U3CQKXTR">
+    <ul class="accordion astro-U3CQKXTR">
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="first" class="astro-U3CQKXTR">
+        <label for="first" class="flex astro-U3CQKXTR">
+          Desarrollo de software a medida
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Destaca tu capacidad para crear soluciones personalizadas y
+            adaptadas a las necesidades específicas de tus clientes. Puedes
+            mencionar la experiencia en el desarrollo de aplicaciones
+            empresariales, aplicaciones móviles, sistemas de gestión, etc.
+          </p>
+        </div>
+      </li>
 
-    <header class="z-30 relative flex flex-col text-left">
-            <h2 class="text-white text-[19px] pt-20 font-regular font-Montserrat"> Nuestros Servicios de Desarrollo </h2>
-            
-            <h2 class="text-white pt-3 z-5 text-[35px] font-black font-Montserrat"> Desarrollador de Software Innovador y Diseño</h2>
-            <h2 class="text-white z-5 text-[35px] font-black font-Montserrat"> Web Profesional </h2>
-    </header> 
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="second" class="astro-U3CQKXTR">
+        <label for="second" class="flex astro-U3CQKXTR">
+          Desarrollo web responsivo
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Destaca la importancia de tener un sitio web adaptativo que se
+            visualice correctamente en diferentes dispositivos, como
+            computadoras de escritorio, tablets y teléfonos móviles. Menciona
+            tus habilidades en la creación de sitios web responsivos y
+            optimizados.
+          </p>
+        </div>
+      </li>
+
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="third" class="astro-U3CQKXTR">
+        <label for="third" class="flex astro-U3CQKXTR">
+          Diseño de interfaces de usuario (UI)
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Puedes resaltar tu capacidad para diseñar interfaces de usuario
+            atractivas y fáciles de usar. Explica cómo trabajas en colaboración
+            con tus clientes para crear diseños a medida que reflejen su marca y
+            objetivos comerciales.
+          </p>
+        </div>
+      </li>
+
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="fourth" class="astro-U3CQKXTR">
+        <label for="fourth" class="flex astro-U3CQKXTR">
+          Desarrollo de aplicaciones móviles
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Si tienes experiencia en el desarrollo de aplicaciones móviles para
+            plataformas iOS y Android, menciona tus habilidades y ejemplos de
+            proyectos anteriores. Destaca la importancia de tener presencia
+            móvil en la actualidad.
+          </p>
+        </div>
+      </li>
+
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="fifth" class="astro-U3CQKXTR">
+        <label for="fifth" class="flex astro-U3CQKXTR">
+          Desarrollo de comercio electrónico
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Si has trabajado en proyectos de desarrollo de tiendas en línea,
+            puedes enfocarte en tus habilidades para crear plataformas de
+            comercio electrónico seguras y escalables. Menciona las
+            características clave que puedes ofrecer, como integración con
+            pasarelas de pago, gestión de inventario y análisis de ventas.
+          </p>
+        </div>
+      </li>
+
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="sixth" class="astro-U3CQKXTR">
+        <label for="sixth" class="flex astro-U3CQKXTR">
+          Mantenimiento y soporte técnico
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Si ofrecerás servicios de mantenimiento y soporte después de la
+            entrega de los proyectos, resáltalo en esta sección. Explica cómo te
+            asegurarás de que tus clientes tengan un respaldo continuo y
+            actualizaciones de software para mantener su funcionamiento óptimo.
+          </p>
+        </div>
+      </li>
+
+      <li class="astro-U3CQKXTR">
+        <input type="radio" name="accordion" id="seventh" class="astro-U3CQKXTR">
+        <label for="seventh" class="flex astro-U3CQKXTR">
+          Consultoria tecnológica
+        </label>
+        <div class="content text-[14px] font-regular font-Montserrat text-justify astro-U3CQKXTR">
+          <p class="astro-U3CQKXTR">
+            Destaca tu capacidad para crear soluciones personalizadas y
+            adaptadas a las necesidades específicas de tus clientes. Puedes
+            mencionar la experiencia en el desarrollo de aplicaciones
+            empresariales, aplicaciones móviles, sistemas de gestión, etc.
+          </p>
+        </div>
+      </li>
+    </ul>
 
     
+  </div>
+</div>
+  </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section id="slide3">
+  <div>
+    <h1>Innovando con pasión: Nuestra historia en desarrollo web</h1>
 
-    <ul class="pt-20 relative leading-[1.5rem]">
-        <a class="text-white text-[15px] font-regular font-Montserrat "> Nuestro enfoque profesional y orientado al detalle garantiza resultados de alta calidad que destacan tu marca y generan una experiencia excepcional para tus usuarios. Confía en nosotros para potenciar tu presencia en línea y alcanzar nuevos niveles de éxito</a>
-
-        <nav class="pt-20 px-5 flex flex-grow basis-0">
-            <ul class="flex text-sm [&>li>a]:text-white [&>li>a]:font-medium [&>li>a]:font-Montserrat [&>li>a]:inline-block [&>li>a]:px-10 [&>li>a]:py-2">
-                <li><a class="rounded-lg border-2 border-green-100 text-sm rounded text-white hover:bg-green hover:text-black transitions-colors border-collapse" href="#">Contáctenos</a></li>
-            </ul>
-        </nav>
-        
+    <div class="underline">
+    <ul class="text-white text-[15px] font-regular font-Poppins">
+        hola@doble-bit.com
     </ul>
-    </div> 
+  </div>
+  </div>
 
-    <ul class="accordion">
-        <li>
+  <div>
+    <h2>Explora nuestra pasión por el desarrollo web, donde la creatividad nunca se agota y cada proyecto es una oportunidad para innovar.</h2>
 
-    <div class="container text-white px-20 pt-40 grow items-justify-end">
-        <div class="box-border min-w-min h-fit p-4 rounded-lg border border-white">
+    <h3>JOSÉ</h3>
 
-            <div class="relative w-full overflow-hidden">
-                <input type="checkbox" id="first" checked class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="first" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Desarrollo de software a medida
-                    </label>
-                </div>
+    <a>Gerente General</a>
+    <a class="text-white font-Poppins text-justify font-thin text-50px"> 
+    AÑOS DE EXPERIENCIA WEB
+    </a>
+    <h2 class="text-white text-[150px] font-medium font-FjallaOne mt-5">4</h2>
+  </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section class="lg:h-screen py-10 lg:py-0 w-screen flex flex-col items-center justify-center bg-white">
+  <header class="text-center">
+    <h2 class="text-black text-[60px] font-regular font-FjallaOne">
+      PRODUCTOS WEB DIGITALES PARA CLIENTES INCREÍBLES
+    </h2>
+  </header>
 
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
+  <div class="container mx-auto grid grid-cols-4 relative pb-40">
+    <ul class="flex">
+      <div class="max-w-full">
+        <div class="relative max-w-[100%] mx-auto contain-general p-8 w-80 h-40">
+<ul class="rounded-lg mt-20 text-hello font-MontserratE font-bold text-[50px]">
+  01
+  <div class="font-FjallaOne text-black font-regular text-[20px] mt-1">
+    PROTOTIPO
+    <div class="font-Poppins text-[15px] leading-6 mt-3 text-justify">
+      Descubre el poder de la innovación, tu primer paso hacia un proyecto exitoso.
+    </div>
+  </div>
+</ul>
+</div>
+      </div>
 
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="content p-4 text-white text-[15px] font-regular font-Montserrat text-justify ">
-                        <p>
-                            Destaca tu capacidad para crear soluciones personalizadas y adaptadas a las necesidades específicas de tus clientes. Puedes mencionar la experiencia en el desarrollo de aplicaciones empresariales, aplicaciones móviles, sistemas de gestión, etc.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-full">
+        <div class="relative max-w-[100%] mx-auto contain-general p-8 w-80 h-40">
+<ul class="rounded-lg mt-20 text-hello font-MontserratE font-bold text-[50px]">
+  02
+  <div class="font-FjallaOne text-black font-regular text-[20px] mt-1">
+    BOCETOS
+    <div class="font-Poppins text-[15px] leading-6 mt-3 text-justify">
+      Con nuestras creaciones visuales, podrás ver tu visión tomando forma.
+    </div>
+  </div>
+</ul>
+</div>
+      </div>
 
-            <div class="relative w-full overflow-hidden">
-                <input id="second" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="second" class="text-white text-[15px] font-black font-Montserrat flex ">
-                        Desarrollo web responsivo
-                    </label>
-                </div>
+      <div class="max-w-full">
+        <div class="relative max-w-[100%] mx-auto contain-general p-8 w-80 h-40">
+<ul class="rounded-lg mt-20 text-hello font-MontserratE font-bold text-[50px]">
+  03
+  <div class="font-FjallaOne text-black font-regular text-[20px] mt-1">
+    WIREFRAME
+    <div class="font-Poppins text-[15px] leading-6 mt-3 text-justify">
+      Nuestra experiencia en estructuras sólidas garantiza una base impecable para tu sitio web.
+    </div>
+  </div>
+</ul>
+</div>
+      </div>
 
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
-
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Destaca la importancia de tener un sitio web adaptativo que se visualice correctamente en diferentes dispositivos, como computadoras de escritorio, tablets y teléfonos móviles. Menciona tus habilidades en la creación de sitios web responsivos y optimizados 
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-
-
-
-            <div class="relative w-full overflow-hidden">
-                <input id="third" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="third" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Diseño de interfaces de usuario (UI)
-                    </label>
-                </div>
-
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
-
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Puedes resaltar tu capacidad para diseñar interfaces de usuario atractivas y fáciles de usar. Explica cómo trabajas en colaboración con tus clientes para crear diseños a medida que reflejen su marca y objetivos comerciales.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="relative w-full overflow-hidden">
-                <input id="fourth" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="fourth" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Desarrollo de aplicaciones móviles
-                    </label>
-                </div>
-
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
-
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Si tienes experiencia en el desarrollo de aplicaciones móviles para plataformas iOS y Android, menciona tus habilidades y ejemplos de proyectos anteriores. Destaca la importancia de tener presencia móvil en la actualidad.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
+      <div class="max-w-full">
+        <div class="relative max-w-[100%] mx-auto contain-general p-8 w-80 h-40">
+<ul class="rounded-lg mt-20 text-hello font-MontserratE font-bold text-[50px]">
+  04
+  <div class="font-FjallaOne text-black font-regular text-[20px] mt-1">
+    DISEÑO UI-UX
+    <div class="font-Poppins text-[15px] leading-6 mt-3 text-justify">
+      Confía en nuestro diseño cautivador y sorprende a tus clientes con una experiencia excepcional.
+    </div>
+  </div>
+</ul>
+</div>
+      </div>
+    </ul>
+  </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section class="lg:h-screen py-10 lg:py-0 w-screen flex flex-col items-center gap-10 justify-center">
+  <div class="text-center w-full">
+    <h2 class="text-white text-[60px] font-regular font-FjallaOne">
+      LAS COSAS QUE SOMOS CAPACES DE HACER
+    </h2>
+  </div>
 
 
+  <div class="container mx-auto gap-10 grid grid-cols-3">
+
+    <div class="relative max-w-[70%] mx-auto contain-general">
+  
+  <div class="relative text-center p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/icon01.png" class="w-20 h-20 mx-auto">
+    </div>
+    <h4 class="my-3 font-black inline-block text-white">
+      PRODUCTOS DIGITALES
+    </h4>
+    <ul class="flex flex-col gap-2 text-white/70">
+      <li>Marca digital</li><li>Sitios web y móviles</li><li>Interfaz de usuario</li><li>Diseño responsive</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</div>
+
+    <div class="relative max-w-[70%] mx-auto contain-general">
+  
+  <div class="relative text-center p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/icon02.png" class="w-20 h-20 mx-auto">
+    </div>
+    <h4 class="my-3 font-black inline-block text-white">
+      DISEÑO UI-UX
+    </h4>
+    <ul class="flex flex-col gap-2 text-white/70">
+      <li>Estrategia Digital</li><li>Experiencia de Usuario</li><li>Maquetación Web</li><li>Sitios móviles</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</div>
+
+    <div class="relative max-w-[70%] mx-auto contain-general">
+  
+  <div class="relative text-center p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/icon03.png" class="w-20 h-20 mx-auto">
+    </div>
+    <h4 class="my-3 font-black inline-block text-white">
+      DESARROLLO WEB
+    </h4>
+    <ul class="flex flex-col gap-2 text-white/70">
+      <li>Plataforma Personalizada</li><li>Ejecuciones de Back-end</li><li>Aplicaciones de Interfaz</li><li>Sistemas Web</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</div>
+  </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section class="h-screen w-screen relative">
+    <div class="container mx-auto gap-10 grid grid-cols-3">
+        <div class="relative max-w-[70%] mx-auto contain-general">
+
+  <a href="#">
+  <div class="relative p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/marco.png" class="w-80 h-80 mx-auto">
+    </div>
+    <h4 class="mt-3 font-black inline-block text-white">
+      Darkness Vehicle
+    </h4>
+    <ul class="flex flex-col text-white/70 font-regular font-FjallaOne text-[10px]">
+      <li>DIGITAL, PRINT, DEVELOPMENT</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</a>
+</div>
+    
+        <div class="mt-10">
+        <div class="relative max-w-[70%] mx-auto contain-general">
+
+  <a href="#">
+  <div class="relative p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/marco.png" class="w-80 h-80 mx-auto">
+    </div>
+    <h4 class="mt-3 font-black inline-block text-white">
+      Goddes Cover Art
+    </h4>
+    <ul class="flex flex-col text-white/70 font-regular font-FjallaOne text-[10px]">
+      <li>PRINT, DIGITAL, DEVELOPMENT</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</a>
+</div>
+          </div>
+    
+        <div class="relative max-w-[70%] mx-auto contain-general">
+
+  <a href="#">
+  <div class="relative p-8 font-Poppins text-base font-regular z-20 hover:bg-black delay:40 transitions-colors duration-300">
+    <div class="w-full">
+      <img src="/public/fonts/marco.png" class="w-80 h-80 mx-auto">
+    </div>
+    <h4 class="mt-3 font-black inline-block text-white">
+      Hard Employee
+    </h4>
+    <ul class="flex flex-col text-white/70 font-regular font-FjallaOne text-[10px]">
+      <li>WEB, DIGITAL, DEVELOPMENT</li>
+    </ul>
+  </div>
+  <div style="background-image: url('/public/fonts/dot-pattern.png'); background-size: 9px" class="absolute bg-repeat w-36 h-36 bottom-[-20px] right-[-20px] contain-puntos z-10">
+  </div>
+</a>
+</div>
+      </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section class="h-screen w-screen relative bg-white grid grid-cols-3 astro-GFBNELVK">
+  <div class="container-lg mt-20 astro-GFBNELVK">
+    <h1 class="tracking-widest pb-10 pl-20 text-black font-regular font-FjallaOne text-[40px] astro-GFBNELVK">
+      DI HOLA PARA LLEGAR A NOSOTROS
+    </h1>
+    <iframe class="pl-20" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3827.5119992574414!2d-71.539485888208!3d-16.39880323806496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a59ffae2999%3A0xc419f49d1f9cd270!2sPlaza%20de%20Armas%20de%20Arequipa!5e0!3m2!1ses-419!2spe!4v1690921326606!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </div>
+
+  <div class="w-100 container astro-GFBNELVK">
+    <div>
+        <div class="pt-20 pl-20 text-black font-semibold font-Poppins text-[15px]">
+            OFICINA PRINCIPAL
+        </div>
+
+</div>
+    <div class="pl-20 text-black font-regular font-Poppins text-[12px] flex flex-col pt-1 astro-GFBNELVK">
+      <a class="astro-GFBNELVK">Boryssa Himry 124 B Block Pozniaky</a>
+      <a class="astro-GFBNELVK">Kiev - UKRAINE</a></div>
+
+      <div class="pt-10 pl-20 flex astro-7MXE3SEO">
+        <label class="flex astro-7MXE3SEO">
+            <input type="text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex astro-7MXE3SEO">
+            <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex astro-7MXE3SEO">Your name</span></label>
+        </div>
+
+         
+    
 
 
-            <div class="relative w-full overflow-hidden">
-                <input id="fifth" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="fifth" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Desarrollo de comercio electrónico
-                    </label>
-                </div>
 
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
+      <div class="pt-10 pl-20 flex astro-7MXE3SEO">
+        <label class="flex astro-7MXE3SEO">
+            <input type="text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex astro-7MXE3SEO">
+            <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex astro-7MXE3SEO">Your e-mail</span></label>
+        </div>
 
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Si has trabajado en proyectos de desarrollo de tiendas en línea, puedes enfocarte en tus habilidades para crear plataformas de comercio electrónico seguras y escalables. Menciona las características clave que puedes ofrecer, como integración con pasarelas de pago, gestión de inventario y análisis de ventas.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
+         
+    
 
 
 
+      <div class="pt-10 pl-20 flex astro-7MXE3SEO">
+        <label class="flex astro-7MXE3SEO">
+            <input type="text" class=" pl-4 h-12 w-[21rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex astro-7MXE3SEO">
+            <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex astro-7MXE3SEO">Subject</span></label>
+        </div>
 
-            <div class="relative w-full overflow-hidden">
-                <input id="sixth" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="sixth" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Mantenimiento y soporte técnico
-                    </label>
-                </div>
+         
+    
 
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
 
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Si ofrecerás servicios de mantenimiento y soporte después de la entrega de los proyectos, resáltalo en esta sección. Explica cómo te asegurarás de que tus clientes tengan un respaldo continuo y actualizaciones de software para mantener su funcionamiento óptimo.
-                        </p>
 
-                    </div>
-
-                </div>
-
-            </div>
+      <section class="astro-42EET5UL">
+    <div class="pt-10 pl-20 flex astro-42EET5UL">
+        <label class="flex astro-42EET5UL">
+            <input type="text" class="pl-4 grow h-20 w-[25rem] text-1xl bg-white border-2 font-Poppins text-[12px] border-black border-opacity-20 outline-none focus:border-gray focus:text-black transition duration-200 flex astro-42EET5UL">
+            <span class="text-1xl text-black text-opacity-50 font-Poppins absolute pt-3 pl-4 transition duration-200 input-text flex astro-42EET5UL">Your Message</span></label>
+        </div>   
+    </section>
 
 
 
 
+      <section>
+    <div class="pt-10 pl-20 ">
+        <a class=" border-2 border-black text-[12px] font-Poppins font-black px-8 py-3 inline-block hover:bg-black hover:text-white hover:font-black transitions-colors border-collapse " href="#"> Enviar</a>
+    </div>
+</section>
+    </div>
 
-            <div class="relative w-full overflow-hidden">
-                <input id="seventh" type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
-                <div class="bg-transparent h-12 w-full pl-5 flex items-center">
-                    <label for="seventh" class="text-white text-[15px] font-black font-Montserrat flex">
-                        Consultoria tecnológica
-                    </label>
-                </div>
+    <div class="w-100 container astro-GFBNELVK">
+        <div>
+        <div class="pt-20 pl-20 text-black font-semibold font-Poppins text-[15px]">
+            CONTÁCTANOS
+        </div>
 
-                <!-- Icono -->
-                <div class="absolute top-3 right-3 text-white transition-transform duration-500 rotate-0 peer-checked:rotate-180">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"></path>
-                    </svg>        
-                </div>
+</div>
+        <div class="pl-20 text-black font-regular font-Poppins text-[12px] flex flex-col pt-1 astro-GFBNELVK">
+      <a class="astro-GFBNELVK">+51 943 273 237</a></div>
 
-                <!-- Content -->
-                <div class="bg-transparent overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40">
-                    <div class="p-4 text-white text-[15px] font-regular font-Montserrat text-justify">
-                        <p>
-                            Destaca tu capacidad para crear soluciones personalizadas y adaptadas a las necesidades específicas de tus clientes. Puedes mencionar la experiencia en el desarrollo de aplicaciones empresariales, aplicaciones móviles, sistemas de gestión, etc.
-                        </p>
+        <div class="underline astro-GFBNELVK">
+          <ul class="relative leading-[1rem] pl-20 astro-GFBNELVK">
+            <a class="text-black text-[12px] font-regular font-Poppins astro-GFBNELVK">
+              hola@doble-bit.com
+            </a>
+          </ul>
+        </div>
+      
 
-                    </div>
+      
+    </div>
 
-                </div>
+</section>
+		</div>
+		<div class="snap-center">
+			<section class="h-60 w-screen relative bg-black">
 
-            </div>
+  <div>
+      <h1 class="pl-10 pt-10 text-white font-regular font-FjallaOne text-[30px] flex">
+          HABLEMOS DE TU PROYECTO.
+  
+          <div class="pl-80 ml-60 mr-20 flex">
+    <a href="#" class="flex pl-20 ml-10">
+        <!-- Facebook -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="white" viewBox="0 0 24 24">
+        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+    </a>
 
+    <a href="#" class="flex pl-5">
+        <!-- Twitter -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+    </a>
 
+    <a href="#" class="flex pl-5">
+        <!-- Linkedin -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"></path>
+        </svg>
+    </a>
 
+    <a href="#" class="flex pl-5">
+        <!-- Google -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"></path>
+        </svg>
+    </a>
+
+    <a href="#" class="flex pl-5">
+        <!-- Youtube -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+    </a>
+    
+</div>
+  </h1>
+  </div>
+
+  <div class="ml-10">
+
+          <a class="ml-20 relative" href="#">
+              <div class="underline">
+    <ul class="text-white text-[15px] font-regular font-Poppins">
+        Ponerse en contacto
+    </ul>
+  </div>
+          </a>
+
+          <ul class="ml-0 mt-3 relative">
+          <a class="text-hello opacity-20 text-[15px] font-regular FjallaOne "> _____________________________________________________________________________________________________________________________________________________________________________________________ </a>
+      </ul>
   
     </div>
-    </div>
-</li>
-</ul>
 
-
-            	
-            
-
-    
-
+      <div class="pt-6 pl-10 text-white font-regular font-Poppins text-[13px]">
+          © 2023 DobleBit | Todos los derechos reservados
+      </div>
 
 </section>
 		</div>
