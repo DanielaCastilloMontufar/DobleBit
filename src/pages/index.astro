@@ -1,47 +1,117 @@
 ---
-import LandingHeader from "../components/LandingHeader.astro";
-import Layout from "../layouts/Layout.astro";
-import HeroSection from "../components/HeroSection.astro"
-import ChargeSection from "../components/ChargeSection.astro";
-import ExploreSection from "../components/ExploreSection.astro";
-import ProductsSection from "../components/ProductsSection.astro";
-import ThingsSection from "../components/ThingsSection.astro";
-import ImagesSection from "../components/ImagesSection.astro";
-import DataSection from "../components/DataSection.astro";
-import FooterSection from "../components/FooterSection.astro";
+import Layout from '../layouts/Layout.astro';
+import LandingHeader from '../components/LandingHeader.astro';
 import "../styles/style.css"
-
+import FirstSlide from '../components/FirstSlide.astro';
+import Navbar from '../components/Navbar.astro';
+import ActivitySection from '../components/ActivitySection.astro';
+import VideoSection from '../components/VideoSection.astro';
+import DownloadSection from '../components/DownloadSection.astro';
+import PublicitySection from '../components/PublicitySection.astro';
+import OptionsSection from '../components/OptionsSection.astro';
+import FooterSection from '../components/FooterSection.astro';
+import QuienesSomos from '../components/QuienesSomos.astro';
+import ConsejoD from '../components/ConsejoD.astro';
+import Organizacion from '../components/Organizacion.astro';
+import DirectorioE from '../components/DirectorioE.astro';
+import Empresas2 from '../components/comuns/Empresas2.astro';
+import AgendaComercial from '../components/comuns/AgendaComercial.astro';
+import AlquilerAmbientes from '../components/comuns/AlquilerAmbientes.astro';
+import AsesoriaLegal from '../components/comuns/AsesoriaLegal.astro';
+import CapacitacionesCCIA from '../components/comuns/CapacitacionesCCIA.astro';
+import CertificacionOrigen from '../components/comuns/CertificacionOrigen.astro';
+import CompraAsociado from '../components/comuns/CompraAsociado.astro';
+import NuestrosConvenios from '../components/comuns/NuestrosConvenios.astro';
+import EstudiosEconomicos from '../components/comuns/EstudiosEconomicos.astro';
+import FeriasyRuedasN from '../components/comuns/FeriasyRuedasN.astro';
+import OrganizacionWebinars from '../components/comuns/OrganizacionWebinars.astro';
+import ProtestosMoras from '../components/comuns/ProtestosMoras.astro';
+import Anunciate from '../components/Anunciate.astro';
+import Eventos from '../components/Eventos.astro';
+import Contactos from '../components/Contactos.astro';
 ---
 
-<Layout title = "Doble Bit">
-		<LandingHeader/>
-
-	<main class="snap-y snap-proximity relative overflow-x-hidden"> 
-		<div class="snap-center">
-			<HeroSection/>
+<Layout title="Camara de Comercio e Industria Arequipa">
+	<LandingHeader/>
+	<main class="snap-y snap-proximity relative overflow-x-hidden overflow-y-hidden">
+		<!-- <div class="snap-center">
+			<FirstSlide/>
 		</div>
 		<div class="snap-center">
-			<ChargeSection/>
+			<Navbar/>
 		</div>
 		<div class="snap-center">
-			<ExploreSection/>
+			<ActivitySection/>
 		</div>
 		<div class="snap-center">
-			<ProductsSection/>
+			<VideoSection/>
 		</div>
 		<div class="snap-center">
-			<ThingsSection/>
+			<DownloadSection/>
 		</div>
 		<div class="snap-center">
-			<ImagesSection/>
+			<PublicitySection/>
 		</div>
 		<div class="snap-center">
-			<DataSection/>
-		</div>
+			<OptionsSection/>
+		</div>  -->
+		 <!-- <div class="snap-center">
+			<QuienesSomos/>
+		</div>  -->
+		<!-- <div class="snap-center">
+			<ConsejoD/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<Organizacion/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<DirectorioE/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<Empresas2/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<AgendaComercial/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<AlquilerAmbientes/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<AsesoriaLegal/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<CapacitacionesCCIA/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<CertificacionOrigen/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<CompraAsociado/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<NuestrosConvenios/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<EstudiosEconomicos/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<FeriasyRuedasN/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<OrganizacionWebinars/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<ProtestosMoras/>
+		</div> -->
+		<!-- <div class="snap-center">
+			<Anunciate/>
+		</div> -->
 		<div class="snap-center">
-			<FooterSection/>
+			<Eventos/>
 		</div>
+		<!-- <div class="snap-center">
+			<Contactos/>
+		</div> -->
 	</main>
-	
+	<FooterSection/>
 </Layout>
-
