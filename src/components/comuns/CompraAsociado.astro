@@ -1,0 +1,151 @@
+---
+import Arrow from "./Arrow.astro";
+import NavbarEmpresas from "./NavbarEmpresas.astro";
+---
+
+
+
+<section class="compraA py-6 mt-40">
+    <NavbarEmpresas/>
+    <div class="container mt-14">
+        <form
+            action="https://www.camara-arequipa.org.pe/directorio"
+            method="post"
+        >
+            <div class="row">
+                <div>
+                    <input
+                        type="text"
+                        class="flex-grow form-control input-control-search"
+                        id="search-directorio"
+                        name="search"
+                        placeholder="Coloca el nombre de la empresa o el tipo de servicio que estás buscando"
+                    />
+                </div>
+                <div class="flex align-items-center pl-[500px]">
+                    <button type="submit" class="btn btn-secundario flex mt-4"
+                        ><i> <Arrow/>
+                        </i> Buscar</button
+                    >
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="p-20">
+        <h1>Cómprale al<br>
+            asociado</h1>
+            <div class="tab-pane grid grid-cols-2 gap-4 flex">
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                    >
+                        <img
+                            src="../../../public/images/asociado3.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ">FACTORING PLUS PERÚ S.A.C.</h5>
+                        <p class="pt-4">Servicio de Factoring</p>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex pt-14"
+                            ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                    >
+                        <img
+                            src="../../../public/images/asociado1.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ">CCASS Perú</h5>
+                        <p class="pt-4">No dejes pasar la oportunidad de fortalecer la confianza en tu empresa.</p>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex pt-12"
+                            ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                        >
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane grid grid-cols-2 gap-4 flex pt-10">
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                    >
+                        <img
+                            src="../../../public/images/asociado2.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ">MVS REPRESENTACIONES</h5>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex pt-28"
+                            ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                        >
+                    </div>
+                </div>
+
+                <div class="card border rounded-lg">
+                    <div
+                        class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                    >
+                        <img
+                            src="../../../public/images/asociado5.webp"
+                            class="card-img-top"
+                            alt="..."
+                        />
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title ">Holding Waki S.A.C</h5>
+                        <p>Tasas de interés competitivas.</p>
+                        <a
+                            href="###########"
+                            class="btn-secundario flex pt-20"
+                            ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                        >
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane flex pt-10">
+                    <div class="card border rounded-lg">
+                        <div
+                            class="card-header flex items-center justify-center  pt-[30px] pb-[30px]"
+                        >
+                            <img
+                                src="../../../public/images/asociado4.webp"
+                                class="card-img-top"
+                                alt="..."
+                            />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title ">SEI SALUD</h5>
+                            <p>10% de descuentos en todos nuestros servicios a los asociados de la CCIA.</p>
+                            <a
+                                href="###########"
+                                class="btn-secundario flex pt-10"
+                                ><i class="not-italic pt-[11px] text-2xl"> Ver detalle</i></a
+                            >
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </div>
+
+</section>

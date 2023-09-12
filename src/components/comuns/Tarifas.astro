@@ -1,0 +1,62 @@
+---
+import Formulario from "./Formulario.astro";
+---
+
+<section class="tarifario">
+    <div class="container">
+        <h1 class="">Tarifas</h1>
+        <ul class="nav nav-pills mb-3 mt-5 flex justify-center" id="pills-tab">
+            <li class="nav-item text-center">
+                <a
+                    class="nav-link active"
+                    id="pills-socios-tab"
+                    href="#pills-socios">Empresas asociadas</a
+                >
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" href="#pills-nosocios"
+                    >Empresas no asociadas</a
+                >
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane" id="pills-socios">
+                <ol class="list-tarifa">
+                    <li class="position-relative">
+                        <div class="guion-prot"></div>
+                        <p class="mt-10">
+                            <span class="number">01</span> Costo por cita pactada
+                            <small class="font-bold">incl. IGV</small>
+                        </p>
+                    </li>
+                    <div class="precio mt-4 text-left active">
+                        <p class="title">Tarifa actual</p>
+                        <p class="moneda">
+                            <span>S/</span> 100<span>.00</span>
+                        </p>
+                        <p class="text-verde">* 01 cita gratis al año.</p>
+                    </div>
+                </ol>
+            </div>
+            <div class="tab-pane" id="pills-nosocios">
+                <ol class="list-tarifa">
+                    <li class="position-relative">
+                        <div class="guion-prot"></div>
+                        <p class="">
+                            <span class="number">01</span> Costo por cita pactada
+                            <small class="font-bold">incl. IGV</small>
+                        </p>
+                    </li>
+                    <div class="precio mt-4 active">
+                        <p class="title">Tarifa actual</p>
+                        <p class="moneda">
+                            <span>S/</span> 150<span>.00</span>
+                        </p>
+                    </div>
+                </ol>
+            </div>
+        </div>
+        <Formulario/>
+    </div>
+    
+</section>

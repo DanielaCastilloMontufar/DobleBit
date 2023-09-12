@@ -1,0 +1,47 @@
+---
+import Arrow1 from "./Arrow1.astro";
+import NavbarAgenda from "./NavbarAgenda.astro";
+import StaticSlides from "./StaticSlides.astro";
+---
+
+<section class="certificacionO">
+    <div class="dtl grid grid-cols-2 gap-2">
+        <div class="pt-20 pl-10">
+            <h2 class="leading-[55px]">Certificación <span><br />de Origen</span></h2>
+            <p>
+                Convenio de delegación de funciones por parte del Ministerio de Comercio Exterior y Turismo. <br /><br />
+                Permite a los exportadores de la región acreditar el cumplimiento de los requisitos de origen para beneficiarse de las preferencias arancelarias en el marco de los Tratados de Libre Comercio o Acuerdos Comerciales Internacionales de los cuales nuestro país es parte.
+            </p>
+
+            <button type="submit" class="btn btn-secundario flex mt-10"
+                ><i> <Arrow1 /></i> Ver más</button
+            >
+        </div>
+
+        <div>
+            <div class="imagen1">
+                <img
+                    class="app-img1 pt-20 pl-10"
+                    src="../../public/images/certificacion1.webp"
+                    alt=""
+                />
+            </div>
+            <div class="flex">
+                <div class="w-1/2"><a href="#"><img
+                class=" pt-20 w-200"
+                src="../../public/images/videos.webp"
+                alt=""
+            /></a></div>
+            <div class="pt-20 w-1/2">
+                <p class="uppercase">Novedades</p>
+                <p class="">¿Qué es el libro de reclamaciones?</p>
+            </div></div>
+        </div>
+    </div>
+    <NavbarAgenda 
+    name=" Geraldine Márquez Herrera"
+    number="380505 Anexo 113"
+    hotmail="gmarquez@cciarequipa.org"/>
+</section>
+
+<StaticSlides/>
