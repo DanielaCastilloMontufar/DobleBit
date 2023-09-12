@@ -1,42 +1,79 @@
 ---
-import Logo from "./Logo.astro";
-import ContactButton from "./comuns/ContactButton.astro"
+import Logo from "./comuns/Logo.astro";
+import LogIn from "./comuns/LogIn.astro";
 ---
-<section id="landing-header"
-class="z-50 sticky">
 
-<body>
-  <header>
-    <a class="logo"><Logo/></a>
-    <input type="checkbox" id="check">
-    <label for="check" class="mostrar-menu">&#8801</label>
-    <nav class="menu">
-      <a href="#">Inicio</a>
-      <a href="#">Nosotros</a>
-      <a href="#">Servicios</a>
-      <a href="#">Portafolio</a>
-      <a1 href="#"><ContactButton/></a1>
-      <label for="check" class="esconder-menu">&#215</label>
-    </nav>
-  </header>
-</body>
+<section id="landing-header" class="z-50 sticky ">
+  <body>
+    <header>
+      <a href="#" class="logo"><Logo /></a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="mostrar-menu">&#8801</label>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">Nosotros &#x25BE;</a>
+            <ul class="dropdown">
+             <li><a onclick="auth()">Quienes Somos</a></li>
+             <li><a href="#">Consejo Directivo</a></li>
+             <li><a href="#">Organizacion</a></li>
+            </ul></li>
+          <li><a href="#">Directorio Empresarial</a></li>
+          <li>
+            <a href="#">Servicios &#x25BE;</a>
+            <ul class="dropdown mt-2">
+             <li><a href="#">Agenda Comercial</a></li>
+             <li><a href="/alquilerambientes/">Alquiler de Ambientes</a></li>
+             <li><a href="#">Asesoría Legal</a></li>
+             <li><a href="#">Capacitaciones</a></li>
+             <li><a href="#">Certificación de Origen</a></li>
+             <li><a href="#">Cómprale al Asociado</a></li>
+             <li><a href="#">Convenios</a></li>
+             <li><a href="#">Estudios Económicos</a></li>
+             <li><a href="#">Ferias y Ruedas de Networking</a></li>
+             <li><a href="#">Organización de Webinars</a></li>
+             <li><a href="#">Protestos y Moras</a></li>
+            </ul>
+            </li>
+          <li><a href="https://www.arbitrajeccia.com.pe">Arbitraje</a></li>
+          <li><a href="#">Anúnciate</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Contactos</a></li>
+          <li><a1 href="#"><LogIn/></a1></li>
+       </ul>
+       <label for="check" class="esconder-menu">&#215</label>
+      </nav>
+    </header>
+
+  </body>
 </section>
 
-<!-- ---
-import Logo from "./Logo.astro";
-import Header from "./comuns/Header.astro";
-import ContactButton from "./comuns/ContactButton.astro";
----
+<script>
+  const headerEl = document.querySelector('#landing-header') as HTMLElement
 
-<header
-  id="landing-header"
-  class="py-3 flex items-center fixed w-screen justify-between text-white bg-bluek z-50"
->
-  <div class="flex flex-grow basis-0 ml-10">
-    <Logo />
-  </div>
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.90 
+  }
 
-  <Header/>
-  <ContactButton/>  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const {isIntersecting} = entry
+      if (isIntersecting) {
+        const color = entry.target.getAttribute('data-header-color')
+        headerEl.style.color = color
 
-</header> -->
+      }
+    })
+  }, observerOptions)
+
+  const sectionElements = document.querySelectorAll("#slide1")
+  sectionElements.forEach(section => observer.observe(section))
+
+
+function auth(){
+  window.location.assign('QuienesSomos.astro')
+}
+
+
+</script>
